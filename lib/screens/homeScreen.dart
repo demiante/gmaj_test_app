@@ -16,19 +16,19 @@ class HomeScreen extends StatelessWidget {
             children: [
               //  DrawerHeader(),
               ListTile(
-                title: Text("Clase 11"),
+                title: Text("Clase 11-12"),
                 onTap: () {
                   Navigator.pushNamed(context, "/Clase11");
                 },
               ),
               ListTile(
-                title: Text("Clase 12"),
+                title: Text("Clase 13"),
                 onTap: () {
                   Navigator.of(context).pop();
                 },
               ),
               ListTile(
-                title: Text("Clase 13"),
+                title: Text("Clase 14"),
                 onTap: () {
                   Navigator.of(context).pop();
                 },
