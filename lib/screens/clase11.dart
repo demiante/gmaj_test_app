@@ -20,7 +20,7 @@ class _Clase11State extends State<Clase11> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Clase 11"),
+        title: Text("Clase 11-12"),
       ),
       body: Center(
         child: Column(
