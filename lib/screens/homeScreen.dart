@@ -7,7 +7,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: Scaffold(
-        body: Center(child: Text("Aplicacion TEST")),
+        body: Center(child: Text("Aplicacion de testeo ")),
         appBar: AppBar(
           title: Text("Gmaj Center"),
         ),
@@ -18,13 +18,14 @@ class HomeScreen extends StatelessWidget {
               ListTile(
                 title: Text("Clase 11-12"),
                 onTap: () {
+                  Navigator.pop(context);
                   Navigator.pushNamed(context, "/Clase11");
                 },
               ),
               ListTile(
                 title: Text("Clase 13"),
                 onTap: () {
-                  Navigator.of(context).pop();
+                  Navigator.pop(context);
                 },
               ),
               ListTile(

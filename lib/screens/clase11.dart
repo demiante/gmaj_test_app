@@ -31,10 +31,10 @@ class _Clase11State extends State<Clase11> {
               onDoubleTap: () => darNombreImagen(1),
               onLongPress: () => darNombreImagen(2),
               child: Image(
-                image: AssetImage(fotito),
+                image: AssetImage('$fotito'),
               ),
             ),
-            Text("imagen: $fotito"),
+            Text("imagen: $fotito")
           ],
         ),
       ),
@@ -42,29 +42,30 @@ class _Clase11State extends State<Clase11> {
   }
 
   darNombreImagen(int index) {
-    String imagen;
     if (index == 0) {
-      imagen = 'lib/assets/gmajLogo.jpg';
-      fotito = imagen;
-      setState(() {
-        value += 1;
-      });
+      fotito = 'lib/assets/gmajLogo.jpg';
+      print("$fotito");
+      // setState(() {
+      //   value += 1;
+      // });
     }
 
     if (index == 1) {
-      imagen = 'lib/assets/gmajLogo2.jpg';
-      fotito = imagen;
-      print("Imagen 1");
-      setState(() {
-        value += 1;
-      });
+      fotito = 'lib/assets/gmajLogo2.jpg';
+
+      print("$fotito");
+      // setState(() {
+      //   value += 1;
+      // });
     }
     if (index != 0 && index != 1) {
-      imagen = 'lib/assets/sinImagen.jpg';
-      fotito = imagen;
-      setState(() {
-        value += 1;
-      });
+      fotito = 'lib/assets/sinImagen.jpg';
+      print("$fotito");
+      // setState(() {
+      //   value += 1;
+      // });
     }
+
+    setState(() {});
   }
 }
