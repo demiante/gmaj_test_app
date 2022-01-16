@@ -9,13 +9,7 @@ class Clase11 extends StatefulWidget {
 
 class _Clase11State extends State<Clase11> {
   String fotito = 'lib/assets/sinImagen.jpg';
-  void changeVal(int val) {
-    setState(() {
-      value = val;
-    });
-  }
 
-  int value = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,25 +39,16 @@ class _Clase11State extends State<Clase11> {
     if (index == 0) {
       fotito = 'lib/assets/gmajLogo.jpg';
       print("$fotito");
-      // setState(() {
-      //   value += 1;
-      // });
     }
 
     if (index == 1) {
       fotito = 'lib/assets/gmajLogo2.jpg';
 
       print("$fotito");
-      // setState(() {
-      //   value += 1;
-      // });
     }
     if (index != 0 && index != 1) {
       fotito = 'lib/assets/sinImagen.jpg';
       print("$fotito");
-      // setState(() {
-      //   value += 1;
-      // });
     }
 
     setState(() {});
